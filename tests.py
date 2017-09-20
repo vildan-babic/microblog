@@ -9,6 +9,7 @@ from config import Config
 class TestConfig(Config):
     TESTING = True
     SQLALCHEMY_DATABASE_URI = 'sqlite://'
+    ELASTICSEARCH_URI = None
 
 
 class UserModelCase(unittest.TestCase):
